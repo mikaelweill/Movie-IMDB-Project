@@ -1,0 +1,158 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    background-color: black;
+    background-image: url(./image/bckground.png);
+    color: #fff;
+}
+
+.nav {
+    margin: 0 auto;
+    width: 80%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+@media (min-width: 500px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.65em;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.875em;
+}
+
+
+
+.search-line {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (min-width: 500px) {
+    .search-line  {
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        top: 30vh;
+        transform: translateY(-50%);
+    }
+}
+
+
+#search-bar {
+    width: 55%;
+    border:  1px solid #D1D5DB;
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 0.6em 0.6em;
+}
+
+#btn-search {
+    width: 20%;
+    border:  1px solid #D1D5DB;
+    background: #F9FAFB;
+    border-radius: 0px 6px 6px 0px;
+    padding: 0.6em 0em;
+}
+
+#movie-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.placeholder {
+    margin-top: 20vh;
+}
+.nothing-found {
+    max-width: 60%;
+    margin-top: 20vh;
+    color: #DFDDDD;
+
+}
+
+.movie-block {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: grey 2px solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.img-movie {
+    width: 40%;
+    height: 40%;
+}
+
+.text-block {
+    width: 55%;
+    font-size : 0.9rem;
+    margin-right: 1em;
+}
+
+.movie-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.25rem;
+}
+
+.movie-title>h2 {
+    margin-right: 0.3em;
+}
+
+
+.meta-block {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem
+}
+
+.plot {
+    color: #6B7280;
+}
+
+
+.watchlist {
+    border:none;
+    background-color: #fff;
+}
+
+.watchlist:hover,
+.watchlist:focus,
+#btn-search:hover,
+#btn-search:focus {
+    cursor: pointer;
+}
+
+.back-to-search {
+    background-color: black;
+}
+
