@@ -1,4 +1,5 @@
-const key = "e6b3c723"
+const key = config.SECRET_KEY;
+
 const searchBtn = document.getElementById("btn-search")
 const movieList = document.getElementById("movie-list")
 const searchBar = document.getElementById("search-bar")
